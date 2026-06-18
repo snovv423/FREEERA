@@ -175,6 +175,10 @@
       });
     });
   })();
+  window.addEventListener('pageshow', function(){
+    var seal = document.getElementById('seal');
+    if(seal){ seal.classList.remove('hit','tap'); }
+  });
   </script>
 </body>
 </html>
